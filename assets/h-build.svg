@@ -20,7 +20,7 @@
     @keyframes s{from{transform:translateX(-200px)}to{transform:translateX(1300px)}}
   </style>
   <rect width="1200" height="70" rx="10" fill="#050B1A"/>
-  <text class="n" x="24" y="43" font-size="20" font-weight="600" fill="#7AC142">03</text>
+  <!-- <text class="n" x="24" y="43" font-size="20" font-weight="600" fill="#7AC142">03</text> -->
   <text class="t" x="68" y="44" font-size="26" font-weight="700" letter-spacing="5" fill="#FFFFFF">WHAT WE BUILD</text>
   <line class="l" x1="24" y1="58" x2="1176" y2="58" stroke="url(#brand)" stroke-width="2" stroke-linecap="round"/>
   <rect class="s" y="57" width="200" height="3" fill="url(#sw)"/>
