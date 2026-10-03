@@ -19,8 +19,8 @@
       <stop offset="0" stop-color="#050B1A" stop-opacity="1"/>
       <stop offset="1" stop-color="#050B1A" stop-opacity="0"/>
     </linearGradient>
-    <filter id="blur"><feGaussianBlur stdDeviation="60"/></filter>
-    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <circle class="orb1" cx="200" cy="140" r="150" fill="#2F6FDB" opacity=".45" filter="url(#blur)"/>
+    <circle class="orb2" cx="980" cy="320" r="150" fill="#7AC142" opacity=".28" filter="url(#blur)"/>    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <clipPath id="typeclip"><rect class="typer" x="80" y="204" width="0" height="44"/></clipPath>
   </defs>
 
