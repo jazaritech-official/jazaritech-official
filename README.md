@@ -16,7 +16,7 @@ Jazari Tech is a technology company based in Karachi, Pakistan. We build digital
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
-## What We Build
+<img src="./assets/h-build.svg" width="100%" alt="What We Build" />
 
 <table>
 <tr>
