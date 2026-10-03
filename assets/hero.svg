@@ -1,1 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050B1A"/><stop offset="1" stop-color="#0B1B3D"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6FDB"/><stop offset="1" stop-color="#7AC142"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6FDB" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#4F8DF7" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#7AC142" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#4F8DF7" stroke-opacity="0.08"/>
+    </pattern>
+    <filter id="blur"><feGaussianBlur stdDeviation="60"/></filter>
+  </defs>
+  <style>
+    text{font-family:'Segoe UI',Inter,Helvetica,Arial,sans-serif}
+    .grid{animation:pan 14s linear infinite}
+    @keyframes pan{to{transform:translate(40px,40px)}}
+    .orb1{animation:f1 9s ease-in-out infinite alternate}
+    .orb2{animation:f2 11s ease-in-out infinite alternate}
+    @keyframes f1{to{transform:translate(120px,40px)}}
+    @keyframes f2{to{transform:translate(-140px,-30px)}}
+    .scan{animation:sc 6s ease-in-out infinite}
+    @keyframes sc{0%{transform:translateX(-300px)}100%{transform:translateX(1500px)}}
+    .title{opacity:0;animation:rise 1.2s .2s cubic-bezier(.2,.8,.2,1) forwards}
+    .sub{opacity:0;animation:rise 1.2s .6s cubic-bezier(.2,.8,.2,1) forwards}
+    @keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+    .line{stroke-dasharray:520;stroke-dashoffset:520;animation:draw 2s 1s ease-out forwards}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    .r{opacity:0;animation:cyc 12s infinite}
+    .r1{animation-delay:1.5s}.r2{animation-delay:4.5s}.r3{animation-delay:7.5s}.r4{animation-delay:10.5s}
+    @keyframes cyc{0%{opacity:0;transform:translateY(8px)}4%{opacity:1;transform:none}22%{opacity:1}26%{opacity:0}100%{opacity:0}}
+    .dot{animation:pulse 2s ease-in-out infinite}
+    @keyframes pulse{50%{opacity:.3}}
+  </style>
+  <rect width="1200" height="360" fill="url(#bg)"/>
+  <rect class="grid" x="-40" y="-40" width="1300" height="440" fill="url(#grid)"/>
+  <circle class="orb1" cx="200" cy="120" r="140" fill="#2F6FDB" opacity="0.45" filter="url(#blur)"/>
+  <circle class="orb2" cx="950" cy="260" r="140" fill="#7AC142" opacity="0.30" filter="url(#blur)"/>
+  <rect class="scan" x="0" y="0" width="300" height="360" fill="url(#scan)"/>
 
+  <text class="title" x="600" y="140" text-anchor="middle" font-size="68" font-weight="700" letter-spacing="10" fill="#FFFFFF">JAZARI TECH</text>
+  <text class="sub" x="600" y="182" text-anchor="middle" font-size="22" fill="#9FB0CC" letter-spacing="3">Unleashing the Power of Possibility.</text>
+  <line class="line" x1="340" y1="208" x2="860" y2="208" stroke="url(#brand)" stroke-width="2" stroke-linecap="round"/>
+
+  <circle class="dot" cx="372" cy="264" r="5" fill="#7AC142"/>
+  <g font-size="22" fill="#4F8DF7" font-weight="600">
+    <text class="r r1" x="392" y="272">Software Engineering &amp; Web Development</text>
+    <text class="r r2" x="392" y="272">AI Solutions &amp; Business Automation</text>
+    <text class="r r3" x="392" y="272">ERP, SaaS &amp; POS Systems</text>
+    <text class="r r4" x="392" y="272">SEO &amp; Digital Marketing</text>
+  </g>
+  <text x="600" y="334" text-anchor="middle" font-size="13" fill="#6B7C99" letter-spacing="4">KARACHI · PAKISTAN</text>
+</svg>
