@@ -1,5 +1,7 @@
 <img src="./assets/hero.svg" width="100%" alt="Jazari Tech Official" />
 
+<img src="./assets/flow.svg" width="100%" alt="" />
+
 <div align="center">
 
 **Digital transformation through software, AI, automation, web, SEO, ERP & SaaS.**
