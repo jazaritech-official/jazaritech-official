@@ -1,1 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050B1A"/><stop offset="1" stop-color="#0B1B3D"/>
+    </linearGradient>
+    <radialGradient id="b1"><stop offset="0" stop-color="#2F6FDB" stop-opacity=".9"/><stop offset="1" stop-color="#2F6FDB" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b2"><stop offset="0" stop-color="#7AC142" stop-opacity=".7"/><stop offset="1" stop-color="#7AC142" stop-opacity="0"/></radialGradient>
+    <filter id="fluid" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="2" result="n">
+        <animate attributeName="baseFrequency" values="0.008 0.012;0.013 0.007;0.008 0.012" dur="12s" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="90"/>
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#4F8DF7" stroke-opacity=".07"/></pattern>
+    <path id="p" d="M120 200C260 60 420 60 560 160S820 260 960 140S1120 60 1080 200S600 280 120 200Z"/>
+  </defs>
+  <style>
+    text{font-family:'Segoe UI',Inter,Helvetica,Arial,sans-serif}
+    .ring{transform-box:fill-box;transform-origin:center;animation:rp 1.6s ease-out infinite}
+    @keyframes rp{from{transform:scale(.4);opacity:.9}to{transform:scale(1.8);opacity:0}}
+    .tag{animation:fl 4s ease-in-out infinite alternate}
+    @keyframes fl{to{opacity:.35}}
+  </style>
 
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+
+  <!-- fluid wake: displaced blobs that chase the cursor -->
+  <g filter="url(#fluid)">
+    <circle r="130" fill="url(#b1)">
+      <animateMotion dur="10s" begin="-0.6s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion>
+    </circle>
+    <circle r="110" fill="url(#b2)">
+      <animateMotion dur="10s" begin="-1.4s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion>
+    </circle>
+    <circle cx="300" cy="230" r="120" fill="url(#b1)" opacity=".5"/>
+    <circle cx="900" cy="80" r="120" fill="url(#b2)" opacity=".4"/>
+  </g>
+
+  <!-- magnetic button: leans 5% toward the cursor -->
+  <g transform="translate(570 142.5) scale(0.05)">
+    <g>
+      <animateMotion dur="10s" begin="-2s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion>
+      <rect x="-1700" y="-420" width="3400" height="840" rx="420" fill="#0B1B3D" stroke="#4F8DF7" stroke-width="30" stroke-opacity=".8"/>
+      <text y="130" text-anchor="middle" font-size="340" font-weight="600" fill="#FFFFFF" letter-spacing="20">Explore Jazari Tech</text>
+    </g>
+  </g>
+
+  <!-- cursor trail -->
+  <g fill="#4F8DF7">
+    <circle r="7" opacity=".8"><animateMotion dur="10s" begin="-1.9s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion></circle>
+    <circle r="6.5" opacity=".7"><animateMotion dur="10s" begin="-1.8s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion></circle>
+    <circle r="6" opacity=".6"><animateMotion dur="10s" begin="-1.7s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion></circle>
+    <circle r="5.5" opacity=".5"><animateMotion dur="10s" begin="-1.6s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion></circle>
+    <circle r="5" opacity=".42"><animateMotion dur="10s" begin="-1.5s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion></circle>
+    <circle r="4.2" opacity=".34"><animateMotion dur="10s" begin="-1.4s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion></circle>
+    <circle r="3.5" opacity=".26"><animateMotion dur="10s" begin="-1.3s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion></circle>
+    <circle r="2.8" opacity=".18"><animateMotion dur="10s" begin="-1.2s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion></circle>
+    <circle r="2.2" opacity=".12"><animateMotion dur="10s" begin="-1.1s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion></circle>
+    <circle r="1.6" opacity=".08"><animateMotion dur="10s" begin="-1s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion></circle>
+  </g>
+
+  <!-- particle sparks emitted from the path -->
+  <g fill="#7AC142" filter="url(#glow)">
+    <g><animateMotion dur="10s" begin="-1.9s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion>
+      <circle r="2.5"><animate attributeName="cx" values="0;-30" dur="1.1s" repeatCount="indefinite"/><animate attributeName="cy" values="0;-34" dur="1.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.1s" repeatCount="indefinite"/></circle></g>
+    <g><animateMotion dur="10s" begin="-2.1s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion>
+      <circle r="2"><animate attributeName="cx" values="0;28" dur="1.4s" repeatCount="indefinite"/><animate attributeName="cy" values="0;-26" dur="1.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.4s" repeatCount="indefinite"/></circle></g>
+    <g><animateMotion dur="10s" begin="-2.3s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion>
+      <circle r="3"><animate attributeName="cx" values="0;-22" dur="1.2s" repeatCount="indefinite"/><animate attributeName="cy" values="0;32" dur="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.2s" repeatCount="indefinite"/></circle></g>
+    <g><animateMotion dur="10s" begin="-2.5s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion>
+      <circle r="2"><animate attributeName="cx" values="0;34" dur="1.5s" repeatCount="indefinite"/><animate attributeName="cy" values="0;24" dur="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.5s" repeatCount="indefinite"/></circle></g>
+    <g><animateMotion dur="10s" begin="-2.7s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion>
+      <circle r="2.5"><animate attributeName="cx" values="0;0" dur="1s" repeatCount="indefinite"/><animate attributeName="cy" values="0;-40" dur="1s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1s" repeatCount="indefinite"/></circle></g>
+    <g><animateMotion dur="10s" begin="-2.9s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion>
+      <circle r="2"><animate attributeName="cx" values="0;-36" dur="1.3s" repeatCount="indefinite"/><animate attributeName="cy" values="0;10" dur="1.3s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.3s" repeatCount="indefinite"/></circle></g>
+  </g>
+
+  <!-- lead cursor -->
+  <g>
+    <animateMotion dur="10s" begin="-2s" repeatCount="indefinite"><mpath xlink:href="#p"/></animateMotion>
+    <circle class="ring" r="16" fill="none" stroke="#7AC142" stroke-width="1.5"/>
+    <circle r="5" fill="#7AC142" filter="url(#glow)"/>
+    <polygon points="0,0 0,17 4.5,13 8,20 10.5,19 7,12 13,12" fill="#FFFFFF" transform="translate(-1 -1)"/>
+  </g>
+
+  <text class="tag" x="600" y="282" text-anchor="middle" font-size="12" fill="#6B7C99" letter-spacing="6">DIGITAL SYSTEMS IN MOTION</text>
+</svg>
