@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1B3D"/><stop offset="1" stop-color="#050B1A"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6FDB"/><stop offset="1" stop-color="#7AC142"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text{font-family:'Segoe UI',Inter,Helvetica,Arial,sans-serif}
+    .c{opacity:0;animation:up 1s cubic-bezier(.2,.8,.2,1) forwards}
+    .c2{animation-delay:.25s}.c3{animation-delay:.5s}
+    @keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+    .run{stroke-dasharray:110 270;animation:r 4s linear infinite}
+    @keyframes r{from{stroke-dashoffset:380}to{stroke-dashoffset:0}}
+    .d{animation:p 2.4s ease-in-out infinite}
+    @keyframes p{50%{opacity:.3}}
+    .h{font-size:22px;font-weight:700;fill:#fff;letter-spacing:1px}
+    .i{font-size:18px;fill:#B8C4DB}
+  </style>
+
+  <g transform="translate(0 0)"><g class="c">
+    <rect x="1" y="1" width="378" height="298" rx="16" fill="url(#card)" stroke="#4F8DF7" stroke-opacity=".25"/>
+    <line class="run" x1="1" y1="1" x2="379" y2="1" stroke="url(#brand)" stroke-width="3"/>
+    <text class="h" x="28" y="56">Get Clients</text>
+    <rect x="28" y="70" width="48" height="3" rx="1.5" fill="url(#brand)"/>
+    <g class="i">
+      <circle class="d" cx="34" cy="111" r="4" fill="#7AC142"/><text x="52" y="117">Digital Marketing</text>
+      <circle class="d" cx="34" cy="147" r="4" fill="#7AC142"/><text x="52" y="153">Social Media Management</text>
+      <circle class="d" cx="34" cy="183" r="4" fill="#7AC142"/><text x="52" y="189">SEO</text>
+      <circle class="d" cx="34" cy="219" r="4" fill="#7AC142"/><text x="52" y="225">Business Websites</text>
+      <circle class="d" cx="34" cy="255" r="4" fill="#7AC142"/><text x="52" y="261">Lead Generation Systems</text>
+    </g>
+  </g></g>
+
+  <g transform="translate(410 0)"><g class="c c2">
+    <rect x="1" y="1" width="378" height="298" rx="16" fill="url(#card)" stroke="#4F8DF7" stroke-opacity=".25"/>
+    <line class="run" x1="1" y1="1" x2="379" y2="1" stroke="url(#brand)" stroke-width="3" style="animation-delay:-1.3s"/>
+    <text class="h" x="28" y="56">Run Business Smarter</text>
+    <rect x="28" y="70" width="48" height="3" rx="1.5" fill="url(#brand)"/>
+    <g class="i">
+      <circle class="d" cx="34" cy="111" r="4" fill="#7AC142"/><text x="52" y="117">ERP Systems</text>
+      <circle class="d" cx="34" cy="147" r="4" fill="#7AC142"/><text x="52" y="153">SaaS Platforms</text>
+      <circle class="d" cx="34" cy="183" r="4" fill="#7AC142"/><text x="52" y="189">POS Systems</text>
+      <circle class="d" cx="34" cy="219" r="4" fill="#7AC142"/><text x="52" y="225">Custom Business Software</text>
+      <circle class="d" cx="34" cy="255" r="4" fill="#7AC142"/><text x="52" y="261">Workflow Systems</text>
+    </g>
+  </g></g>
+
+  <g transform="translate(820 0)"><g class="c c3">
+    <rect x="1" y="1" width="378" height="298" rx="16" fill="url(#card)" stroke="#4F8DF7" stroke-opacity=".25"/>
+    <line class="run" x1="1" y1="1" x2="379" y2="1" stroke="url(#brand)" stroke-width="3" style="animation-delay:-2.6s"/>
+    <text class="h" x="28" y="56">Scale Without Chaos</text>
+    <rect x="28" y="70" width="48" height="3" rx="1.5" fill="url(#brand)"/>
+    <g class="i">
+      <circle class="d" cx="34" cy="111" r="4" fill="#7AC142"/><text x="52" y="117">AI Solutions</text>
+      <circle class="d" cx="34" cy="147" r="4" fill="#7AC142"/><text x="52" y="153">Business Automation</text>
+      <circle class="d" cx="34" cy="183" r="4" fill="#7AC142"/><text x="52" y="189">Digital Transformation</text>
+      <circle class="d" cx="34" cy="219" r="4" fill="#7AC142"/><text x="52" y="225">Scalable Technology Systems</text>
+    </g>
+  </g></g>
+</svg>
