@@ -38,7 +38,7 @@ Jazari Tech is a technology company based in Karachi, Pakistan. We build digital
 <!-- Actual Content where Featured Projects exist -->
 <img src="./assets/projects.svg" width="100%" alt="Featured Projects" />
 
-[Official-Website](https://jazaritech.vercel.app) · [EWE_School](https://eweschool.vercel.app)
+<a href="https://jazaritech.vercel.app" target="_blank" style="cursor: pointer;"> [Official-Website] </a> · <a href="https://eweschool.vercel.app" target="_blank" style="cursor: pointer;"> [EWE_School] </a>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
