@@ -86,7 +86,8 @@ Jazari Tech is a technology company based in Karachi, Pakistan. We build digital
 - Private repositories for internal systems
 - Least-privilege access for the team
 
-## Development Workflow
+<!-- Development Workflow -->
+<img src="./assets/h-workflow.svg" width="100%" alt="Development Workflow" />
 
 `Plan` → `Build` → `Review` → `Test` → `Deploy` with GitHub Actions
 
