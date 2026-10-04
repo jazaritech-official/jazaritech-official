@@ -72,7 +72,8 @@ Jazari Tech is a technology company based in Karachi, Pakistan. We build digital
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
-## Engineering Standards
+<!-- Engineering Standards -->
+<img src="./assets/h-standards.svg" width="100%" alt="Engineering Standards" />
 
 - TypeScript-first, maintainable codebases
 - Peer review through pull requests
