@@ -79,7 +79,8 @@ Jazari Tech is a technology company based in Karachi, Pakistan. We build digital
 - Peer review through pull requests
 - Documented, reproducible setups
 
-## Security
+<!-- Security -->
+<img src="./assets/h-security.svg" width="100%" alt="Security" />
 
 - No secrets committed to repositories
 - Private repositories for internal systems
