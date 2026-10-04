@@ -21,7 +21,7 @@
   </style>
   <rect width="1200" height="70" rx="10" fill="#050B1A"/>
   <rect x="24" y="22" width="4" height="26" rx="2" fill="#7AC142"/>
-  <text class="t" x="44" y="44" font-size="26" font-weight="700" letter-spacing="5" fill="#FFFFFF">MISSION & VISION</text>
+  <text class="t" x="44" y="44" font-size="26" font-weight="700" letter-spacing="5" fill="#FFFFFF">MISSION &amp; VISION</text>
   <line class="l" x1="24" y1="58" x2="1176" y2="58" stroke="url(#brand)" stroke-width="2" stroke-linecap="round"/>
   <rect class="s" y="57" width="200" height="3" fill="url(#sw)"/>
 </svg>
