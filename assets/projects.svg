@@ -18,7 +18,6 @@
     @keyframes p{50%{opacity:.3}}
   </style>
 
-  <a href="https://jazaritech.vercel.app" target="_blank" style="cursor: pointer;">
   <g><g class="c">
     <rect x="1" y="1" width="583" height="148" rx="16" fill="url(#card)" stroke="#4F8DF7" stroke-opacity=".25"/>
     <line class="run" x1="1" y1="1" x2="584" y2="1" stroke="url(#brand)" stroke-width="3"/>
@@ -30,10 +29,7 @@
     <rect x="490" y="30" width="70" height="26" rx="13" fill="none" stroke="#7AC142" stroke-opacity=".6"/>
     <text x="525" y="48" font-size="13" fill="#7AC142" text-anchor="middle" letter-spacing="2">PUBLIC</text>
   </g></g>
-  </a>
-
   
-  <a href="https://eweschool.vercel.app" target="_blank" style="cursor: pointer;">
   <g transform="translate(615 0)"><g class="c c2">
     <rect x="1" y="1" width="583" height="148" rx="16" fill="url(#card)" stroke="#4F8DF7" stroke-opacity=".25"/>
     <line class="run" x1="1" y1="1" x2="584" y2="1" stroke="url(#brand)" stroke-width="3" style="animation-delay:-2s"/>
@@ -43,5 +39,5 @@
     <rect x="490" y="30" width="70" height="26" rx="13" fill="none" stroke="#7AC142" stroke-opacity=".6"/>
     <text x="525" y="48" font-size="13" fill="#7AC142" text-anchor="middle" letter-spacing="2">PUBLIC</text>
   </g></g>
-  </a>
+  
 </svg>
