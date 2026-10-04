@@ -17,41 +17,11 @@ Jazari Tech is a technology company based in Karachi, Pakistan. We build digital
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
+<!-- What We Build Heading -->
 <img src="./assets/h-build.svg" width="100%" alt="What We Build" />
 
-<table>
-<tr>
-<td width="33%" valign="top">
-
-**Get Clients**
-- Digital Marketing
-- Social Media Management
-- SEO
-- Business Websites
-- Lead Generation Systems
-
-</td>
-<td width="33%" valign="top">
-
-**Run Business Smarter**
-- ERP Systems
-- SaaS Platforms
-- POS Systems
-- Custom Business Software
-- Workflow Systems
-
-</td>
-<td width="33%" valign="top">
-
-**Scale Without Chaos**
-- AI Solutions
-- Business Automation
-- Digital Transformation
-- Scalable Technology Systems
-
-</td>
-</tr>
-</table>
+<!-- Actual Content where built projects exist -->
+<img src="./assets/build.svg" width="100%" alt="What We Build" />
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
@@ -65,10 +35,10 @@ Jazari Tech is a technology company based in Karachi, Pakistan. We build digital
 <!-- Featured Projects -->
 <img src="./assets/h-projects.svg" width="100%" alt="Featured Projects" />
 
-| Repository | Description |
-|---|---|
-| [Official-Website](https://github.com/jazaritech-official/Official-Website) | Company website · TypeScript |
-| [EWE_School](https://github.com/jazaritech-official/EWE_School) | School project |
+<!-- Actual Content where Featured Projects exist -->
+<img src="./assets/projects.svg" width="100%" alt="Featured Projects" />
+
+[Official-Website](https://github.com/jazaritech-official/Official-Website) · [EWE_School](https://github.com/jazaritech-official/EWE_School)
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
