@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 585 150" width="585" height="150">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1B3D"/><stop offset="1" stop-color="#050B1A"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6FDB"/><stop offset="1" stop-color="#7AC142"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text{font-family:'Segoe UI',Inter,Helvetica,Arial,sans-serif}
+    .c{opacity:0;animation:up 1s cubic-bezier(.2,.8,.2,1) forwards}
+    @keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+    .run{stroke-dasharray:140 450;animation:r 4.5s linear infinite}
+    @keyframes r{from{stroke-dashoffset:590}to{stroke-dashoffset:0}}
+    .d{animation:p 2.4s ease-in-out infinite}
+    @keyframes p{50%{opacity:.3}}
+  </style>
+  <g class="c">
+    <rect x="1" y="1" width="583" height="148" rx="16" fill="url(#card)" stroke="#4F8DF7" stroke-opacity=".25"/>
+    <line class="run" x1="1" y1="1" x2="584" y2="1" stroke="url(#brand)" stroke-width="3"/>
+    <path d="M30 40h14l5 6h17a3 3 0 0 1 3 3v22a3 3 0 0 1-3 3H30a3 3 0 0 1-3-3V43a3 3 0 0 1 3-3z" fill="none" stroke="#4F8DF7" stroke-width="2"/>
+    <text x="80" y="66" font-size="24" font-weight="700" fill="#FFFFFF">Official-Website</text>
+    <text x="30" y="106" font-size="17" fill="#B8C4DB">Company website</text>
+    <circle class="d" cx="36" cy="128" r="5" fill="#4F8DF7"/>
+    <text x="50" y="133" font-size="15" fill="#9FB0CC">TypeScript</text>
+    <rect x="490" y="30" width="70" height="26" rx="13" fill="none" stroke="#7AC142" stroke-opacity=".6"/>
+    <text x="525" y="48" font-size="13" fill="#7AC142" text-anchor="middle" letter-spacing="2">PUBLIC</text>
+  </g>
+</svg>
