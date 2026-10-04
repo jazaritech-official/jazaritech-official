@@ -1,1 +1,27 @@
 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 70" width="1200" height="70">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6FDB"/><stop offset="1" stop-color="#7AC142"/>
+    </linearGradient>
+    <linearGradient id="sw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text{font-family:'Segoe UI',Inter,Helvetica,Arial,sans-serif}
+    .t{opacity:0;animation:in 1s .1s cubic-bezier(.2,.8,.2,1) forwards}
+    @keyframes in{from{opacity:0;transform:translateX(-24px)}to{opacity:1;transform:none}}
+    .l{stroke-dasharray:1200;stroke-dashoffset:1200;animation:d 1.6s .3s ease-out forwards}
+    @keyframes d{to{stroke-dashoffset:0}}
+    .s{animation:s 5s 2s ease-in-out infinite}
+    @keyframes s{from{transform:translateX(-200px)}to{transform:translateX(1300px)}}
+  </style>
+  <rect width="1200" height="70" rx="10" fill="#050B1A"/>
+  <rect x="24" y="22" width="4" height="26" rx="2" fill="#7AC142"/>
+  <text class="t" x="44" y="44" font-size="26" font-weight="700" letter-spacing="5" fill="#FFFFFF">MISSION "&" VISION</text>
+  <line class="l" x1="24" y1="58" x2="1176" y2="58" stroke="url(#brand)" stroke-width="2" stroke-linecap="round"/>
+  <rect class="s" y="57" width="200" height="3" fill="url(#sw)"/>
+</svg>
